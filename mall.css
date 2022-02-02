@@ -1,0 +1,152 @@
+/* No need to section these off as almost every element is unique */
+* {
+  margin: 0;
+  padding: 0;
+  border-style: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #0a0a0a;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body h1 {
+  font-size: 4em;
+  text-align: center;
+  margin-top: 5vw;
+  margin-bottom: 3vw;
+}
+
+body h1 h1::-moz-selection {
+  background: white;
+  color: #0a0a0a;
+}
+
+body h1 h1::selection {
+  background: white;
+  color: #0a0a0a;
+}
+
+body button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 24px;
+  width: 20vw;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  margin-top: 3vh;
+}
+
+body button:after {
+  background-color: white;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  -webkit-transform: translate(8px, 8px);
+          transform: translate(8px, 8px);
+  -webkit-transition: -webkit-transform .2s ease-out;
+  transition: -webkit-transform .2s ease-out;
+  transition: transform .2s ease-out;
+  transition: transform .2s ease-out, -webkit-transform .2s ease-out;
+  z-index: -1;
+}
+
+body button:hover:after {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+body button:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+body button:hover {
+  outline: 0;
+}
+
+body input {
+  border: none;
+  font-size: 1.5rem;
+  padding: 7px;
+  width: 90%;
+}
+
+body input input::-moz-selection {
+  background: #0a0a0a;
+  color: white;
+}
+
+body input input::selection {
+  background: #0a0a0a;
+  color: white;
+}
+
+body p {
+  margin-top: 3px;
+  font-size: 1.5rem;
+  width: 90%;
+}
+
+body p p::-moz-selection {
+  background: white;
+  color: #0a0a0a;
+}
+
+body p p::selection {
+  background: white;
+  color: #0a0a0a;
+}
+/*# sourceMappingURL=mall.css.map */
